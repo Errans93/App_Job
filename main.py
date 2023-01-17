@@ -1,27 +1,20 @@
+import os
 from xml.dom import minidom
+file = os.listdir(r'C:\IMA')
+print('Ci sono queste macchine disponibili:')
+for f in file:
+    print(f)
+fil = input('Inserisci il tipo di macchina')
+file = os.listdir(r'C:\IMA' + '\\' + fil)
 
+for f in file:
+    print(f)
 
-workbook = xlsxwriter.Workbook('hello.xlsx')
-
-# The workbook object is then used to add new
-# worksheet via the add_worksheet() method.
-worksheet = workbook.add_worksheet()
-
-# Use the worksheet object to write
-# data via the write() method.
-worksheet.write('A1', 'Hello..')
-worksheet.write('B1', 'Geeks')
-worksheet.write('C1', 'For')
-worksheet.write('D1', 'Geeks')
-
-# Finally, close the Excel file
-# via the close() method.
-workbook.close()
 
 # parse an xml file by name
-file = minidom.parse('prova.xml')
+file = minidom.parse(r'C:\Users\ErraniE\Documents\Progetti_pers\App_Job\prova.xml')
 
-#use getElementsByTagName() to get tag
+# use getElementsByTagName() to get tag
 models = file.getElementsByTagName('model')
 machines = file.getElementsByTagName('machine')
 
@@ -39,8 +32,7 @@ print(machines[0].attributes['Type'].value)
 # all item attributes
 print('\nAll attributes:')
 for elem in machines:
-  print(type(elem))
-
+    print(type(elem))
 
 # one specific item's data
 print('\nmodel #2 data:')
@@ -50,4 +42,4 @@ print(models[1].childNodes[0].data)
 # all items data
 print('\nAll model data:')
 for elem in models:
-  print(elem.firstChild.data)
+    print(elem.firstChild.data)

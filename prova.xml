@@ -1,7 +1,10 @@
 <data>
     <models>
-        <model name="model1">model1abc</model>
-        <model name="model2">model2abc</model>
+        <model name="model1">model1abc
+		<machine key="1" Type="F58" id="1" Serial="F57662" PlcIP="172.20.5.194" ifixName="RA1" Base="F57\F57XXXX" BaseCommon="" PLCType="Siemens S7-1500" CommType="OPC" OPCTagPrefix="SIEMENS.MACHINE." ConfigSuffix="" UseDRTags="Yes" Synoptic="Yes" Faceplate="No" Historian="No" Trend="No" Samples="No" ShelfViewer="No" WarningButton="Yes" Pack="No" VectorInit="" RDLtoCopy="Process report" SubFolderToCopy="" AddressIndexZero="FALSE" MachineGroupHidesIma="FALSE" SecurityPrefix="RA1" Dependency="Yes" MachineDescription="FILLING &amp; CLOSING MACHINE" WebServerUrls="" SingleCardinalityDependencies="GENERAL" NestViewer="No"/>
+		</model>
+        <model name="model2">model2abc
 		<machine key="1" Type="F57" id="1" Serial="F57662" PlcIP="172.20.5.194" ifixName="RA1" Base="F57\F57XXXX" BaseCommon="" PLCType="Siemens S7-1500" CommType="OPC" OPCTagPrefix="SIEMENS.MACHINE." ConfigSuffix="" UseDRTags="Yes" Synoptic="Yes" Faceplate="No" Historian="No" Trend="No" Samples="No" ShelfViewer="No" WarningButton="Yes" Pack="No" VectorInit="" RDLtoCopy="Process report" SubFolderToCopy="" AddressIndexZero="FALSE" MachineGroupHidesIma="FALSE" SecurityPrefix="RA1" Dependency="Yes" MachineDescription="FILLING &amp; CLOSING MACHINE" WebServerUrls="" SingleCardinalityDependencies="GENERAL" NestViewer="No"/>
+		</model>
     </models>
 </data>
