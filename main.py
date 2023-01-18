@@ -1,18 +1,26 @@
 import os
 from xml.dom import minidom
+
+
 file = os.listdir(r'C:\IMA')
-print('Ci sono queste macchine disponibili:')
-for f in file:
-    print(f)
-fil = input('Inserisci il tipo di macchina')
-file = os.listdir(r'C:\IMA' + '\\' + fil)
+print('Ci sono queste macchine disponibili:\n')
 
 for f in file:
     print(f)
+print()
+
+fil = input('Inserisci il tipo di macchina\n')
+
+
+file = os.listdir(r'C:\IMA' + '\\' + fil)
+print()
+for f in file:
+    print(f)
+print()
 
 
 # parse an xml file by name
-file = minidom.parse(r'C:\Users\ErraniE\Documents\Progetti_pers\App_Job\prova.xml')
+file = minidom.parse(r'C:\Users\edoar\OneDrive\Documenti\Progetti_git\App_Job\prova.xml')
 
 # use getElementsByTagName() to get tag
 models = file.getElementsByTagName('model')

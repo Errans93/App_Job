@@ -1,0 +1,40 @@
+<data>
+	<machines>
+		<machine Type="LAT"
+		         id="1"
+		         Serial="EA1005"
+		         PlcIP="192.168.202.211"
+		         ifixName="EA1"
+		         Base="ALUS\ALUS_BASE"
+		         PLCType="Siemens S7-1500"
+		         Synoptic="No"
+		         Historian="Yes"
+		         Trend="No"
+		         Samples="No"
+		         MachineDescription="LOADING UNLOADING ACCUMULATION TABLE"/>
+	</machines>
+	<PCs>
+		<PC iFixType="SCADA"
+		    MainSerial="EA1005"
+		    OSType="WinServer2016"
+		    ETH2IP="172.16.1.16"
+		    ETH1IP="192.168.202.215"
+		    MoxaIP="192.168.202.213"
+		    PCName="LBI31SCDHLA01"
+		    NodeName="EA1"
+		    Username="imauser"
+		    Password="imapass"
+		    ProjectPath="C:\EA1"/>
+	</PCs>
+	<General iFixPack="4.1.2"
+	         CustomerName="WUXI BIOLOGICS IRELAND"
+	         Country="Ireland"
+	         HistorianPC="LBI31SCDHLA01"/>
+	<SqlInfo InstanceName="IMA"
+	         UserName="sqluser"
+	         Password="sql"
+	         SqlPC="LBI31SCDHLA01"/>
+	<SupervisorInfo NodeName="SUP1"
+	                PCName="SCA109SUP"
+	                IP="172.16.1.43"/>
+</data>
